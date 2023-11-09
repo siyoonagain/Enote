@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <script type="module" src="./storybookFunction.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="storybook-group">
+          <div id="storybook-box">
+            <div class="bg">
+              <p><a href="storybook_detail.html">스토리북A</a></p>
+              <a href="#" class="menu">
+                <i
+                  class="fa-solid fa-ellipsis-vertical"
+                  style="color: #000000"
+                ></i>
+                <ul class="story-hide" style="display: none">
+                  <li id="btnAppend" onclick="add()">추가</li>
+                  <li class="" onclick="location.href='storybook_detail.html'">
+                    수정
+                  </li>
+                  <li>삭제</li>
+                </ul>
+              </a>
+            </div>
+            <!-- 추가 팝업 -->
+          </div>
+          <div class="background" id="addpop">
+            <div class="window">
+              <div class="addpop-box">
+                <a href="#">
+                  <i
+                    class="fa-regular fa-circle-xmark remove"
+                    style="color: #000000"
+                    onclick="out()"
+                  ></i>
+                </a>
+                <input
+                  type="text"
+                  id="newCategory"
+                  placeholder="제목을 입력하세요."
+                />
+                <button id="newCategoryAdd">만들기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./storybook.js"></script>
+    <script type="module" src="../load.js"></script>
+    <script type="module" src="../enterEvent.js"></script>
+  </body>
+</html>
